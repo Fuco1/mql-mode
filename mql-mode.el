@@ -34,7 +34,13 @@
 (defvar mql-mode-keywords
   `(("\\<\\(?:Ask\\|B\\(?:ars\\|id\\)\\|Close\\|Digits\\|High\\|Low\\|Open\\|Point\\|\\(?:Ti\\|Volu\\)me\\)\\>"
      . font-lock-builtin-face)
-    (,(regexp-opt '("MODE_STOPLEVEL" "SELECT_BY_TICKET" "INIT_SUCCEEDED" "OP_BUY" "OP_SELL"))
+    (,(regexp-opt '(
+                    "MODE_STOPLEVEL" "MODE_EMA" "MODE_SMA"
+                    "PRICE_CLOSE"
+                    "SELECT_BY_TICKET"
+                    "INIT_SUCCEEDED"
+                    "OP_BUY" "OP_SELL"
+                    ))
      . font-lock-constant-face)
     (,(concat "\\<\\(?:A\\(?:ccount\\(?:Balance\\|C\\(?:ompany\\|redit\\|ur"
               "rency\\)\\|Equity\\|FreeMargin\\(?:Check\\|Mode\\)?\\|Levera"
