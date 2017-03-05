@@ -25,6 +25,9 @@
 
 ;; Major mode for editing mql files: https://www.mql4.com/
 
+;; Similar mode can be found here:
+;; https://github.com/kostafey/kostafeys-emacs-confik/blob/master/artifacts/mql-mode.el
+
 ;;; Code:
 
 (require 'cc-mode)
